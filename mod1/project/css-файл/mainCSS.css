@@ -1,0 +1,12 @@
+/*p {margin: 50px; border: 1px solid powderblue; color: grey}*/
+/*padding: top right bottom left*/
+h1 {margin: 30px; color: dodgerblue; font-size: 230%; text-align: center}
+h2 {margin: 30px; color: dodgerblue; text-align: center}
+body {background-color: aliceblue}
+p {margin: 30px; color: grey; font-family: monospace; font-size: 135%; text-align: center}
+ul {margin: 30px; color: grey; font-family: monospace; font-size: 135%; text-align: center}
+.f {color: dodgerblue; padding: 10px 10px 5px 5px; background: mistyrose; border-radius: 20px}
+.h {margin: 3px; color: dodgerblue; font-size: 95%; padding: 1px 1px 1px 1px}
+a {margin: 30px; color: dodgerblue; padding: 10px 10px 5px 5px; font-size: 135%}
+img {padding: 10px 10px 5px 30px}
+#p1 {color: blue}
