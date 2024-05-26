@@ -1,0 +1,117 @@
+.header_line{
+    grid-area: header_line;
+    background-color: #EFF5FB;
+    width: 100%;
+}
+
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__menu{
+    height: 40px;
+    width: 40px;
+    margin: 8px 0px 8px auto;
+}
+@media  screen and (min-width: 414px) {
+    .header__menu{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+@media  screen and (min-width: 768px) {
+    .header__menu{
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+}
+@media  screen and (min-width: 1024px) {
+    .header__menu{
+        display: none;
+    }
+}
+
+
+.header__logo{
+    height: 34px;
+    width: 48px;
+    margin: 11px auto 11px 0px;
+    
+}
+@media  screen and (min-width: 414px) {
+    .header__logo{
+        margin-top: 19px;
+        margin-bottom: 19px;
+    }
+}
+@media  screen and (min-width: 768px) {
+    .header__logo{
+        width: 51px;
+        height: 36px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.header__navigation{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media  screen and (max-width: 1023px){
+    .header__navigation{
+        display: none;
+    }
+}
+.header__navigation_link{
+    text-decoration: none;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: medium;
+    font-style: normal;
+    margin-left: 16px;
+    margin-right: 16px;
+    white-space: nowrap;
+}
+
+.header__navigation_link:hover{
+    font-weight: bold;
+}
+@media  screen and (min-width: 1440px){
+    .header__navigation_link{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+
+.header__button{
+    color:#03B2A5;
+    background-color: #E3F5F5;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    border-radius: 4%;
+    border: 0;
+    margin: 14px 0px 14px auto;
+    padding: 14px 20px;
+    height: 48px;
+    width: 230px;
+    white-space: nowrap;
+}
+@media  screen and (max-width: 1023px){
+    .header__button{
+       display: none;
+    }
+}
