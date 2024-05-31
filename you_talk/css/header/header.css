@@ -85,7 +85,9 @@
 
 .header__navigation_link:hover{
     font-weight: bold;
+    cursor: pointer;
 }
+
 @media  screen and (min-width: 1440px){
     .header__navigation_link{
         margin-left: 30px;
@@ -109,6 +111,9 @@
     height: 48px;
     width: 230px;
     white-space: nowrap;
+}
+.header__button:hover{
+    cursor: pointer;
 }
 @media  screen and (max-width: 1023px){
     .header__button{
