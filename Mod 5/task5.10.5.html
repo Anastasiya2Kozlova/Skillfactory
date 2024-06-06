@@ -1,0 +1,94 @@
+<!doctype html>
+    <html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Кредитный калькулятор</title>
+    </head>
+    
+    <body>
+        <ul>
+        <li>если клиенту нет 18 лет, то кредит он не получит</li>
+        <li>если клиенту от 18 до 21, то он может получить максимум 50000</li>
+        <li>если клиенту от 22 до 35, то он сможет получить максимум 400000</li>
+        <li>если клиенту от 36 до 65, то ему одобрят максимум 1000000</li>
+        <li>кредит могут выдавать суммами кратными 10000.</li>
+        </ul>
+    
+        <script>
+            let ages = prompt('Введите Ваш возраст:');
+            if (Number(ages) == NaN || ages === ''|| ages === null){ 
+              alert("Вы не ввели Ваш возраст"); 
+            }
+            else {
+                ages = +ages;
+                if (ages < 18){
+                    alert("Мы не можем одобрить Вам кредит. Ваш возраст меньше 18 лет");
+                } else
+                if ((ages >= 18)&&(ages <= 21)){
+                    let summa = prompt('Мы  можем выдать Вам максимум 50 000. \nВведите сумму, кратную 1 000.');
+                    if (Number(summa) === NaN || summa === '' || summa === null || +summa > 50000 || +summa < 1000){
+                        alert("Мы не можем выдать данную сумму. Всего доброго!");
+                        end;
+                    } else {
+                        summa = +summa;
+                        let remainder = summa % 1000;
+                        switch (remainder){
+                            case 0:
+                                alert(`Мы можем выдать Вам  ${summa}`);
+                                break;
+
+                            default:
+                                alert(`Вы ввели сумму, не кратную 1 000. Мы можем выдать Вам  ${summa - remainder}`);
+                                break;
+                        }
+                    }
+                } else
+
+                if ((ages >= 22) && (ages <= 35)){
+                    let summa = prompt('Мы  можем выдать Вам максимум 400 000. \nВведите сумму, кратную 1 000.');
+                    if (Number(summa) === NaN || summa === '' || summa === null || +summa > 400000 || +summa < 1000){
+                        alert("Мы не можем выдать данную сумму. Всего доброго!");
+                    } 
+                    else {
+                        summa = +summa;
+                        let remainder = summa % 1000;
+                        switch (remainder){
+                            case 0:
+                                    alert(`Мы можем выдать Вам  ${summa}`);
+                                    break;
+
+                            default:
+                                    alert(`Вы ввели сумму, не кратную 1 000. Мы можем выдать Вам  ${summa - remainder}`);
+                                    break;
+                            }
+                    }
+                } else
+
+                if(ages >= 36 && ages <= 65){
+                    let summa = prompt('Мы  можем выдать Вам максимум 1 000 000. \nВведите сумму, кратную 1 000.');
+                    if (Number(summa) === NaN || summa === '' || summa === null || +summa > 1000000 || +summa < 1000){
+                        alert("Мы не можем выдать данную сумму. Всего доброго!");
+                        end;
+                    } else {
+                        summa = +summa;
+                        let remainder = summa % 1000;
+                        switch (remainder){
+                            case 0:
+                                alert(`Мы можем выдать Вам  ${summa}`);
+                                break;
+
+                            default:
+                                alert(`Вы ввели сумму, не кратную 1 000. Мы можем выдать Вам  ${summa - remainder}`);
+                                break;
+                        }
+                    }
+                } else {alert("Вам не положен кредит в нашем банке!");}
+            }
+        </script>
+    </body>
+    
+    </html>
