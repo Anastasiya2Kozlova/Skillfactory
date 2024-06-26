@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+  
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px dotted #6ebeff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+} 
+
+#loader{
+    display: none;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#link{
+    display: none;
+}
+
+  
+#dog-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    border-radius: 10px;
+}
+  
+button {
+    padding: 10px 20px;
+    font-size: 19px;
+    background-color: #27e6ff;
+    color: #0005af;
+    border-color: #01c7ff;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+  
+button:hover {
+    background-color: #86efff;
+}
+  
